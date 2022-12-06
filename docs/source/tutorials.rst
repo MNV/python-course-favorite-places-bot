@@ -52,14 +52,14 @@
 2. Соберите Docker-контейнеры с помощью Docker Compose:
     .. code-block:: console
 
-        docker-compose build
+        docker compose build
 
     Данную команду необходимо выполнять повторно в случае обновления зависимостей в файле `requirements.txt`.
 
 3. Для запуска приложения выполните:
     .. code-block:: console
 
-        docker-compose up
+        docker compose up
 
 Настройка чат-бота
 ------------------

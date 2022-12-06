@@ -14,7 +14,7 @@ format:
 
 # запуск статического анализа кода (выявление ошибок типов и форматирования кода)
 lint:
-	docker-compose run --no-deps --workdir / favorite-places-bot /bin/bash -c "pylint src; flake8 src; mypy src; black --check src"
+	docker compose run --no-deps --workdir / favorite-places-bot /bin/bash -c "pylint src; flake8 src; mypy src; black --check src"
 
 # запуск автоматических тестов
 test:
