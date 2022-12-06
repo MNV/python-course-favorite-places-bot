@@ -1,4 +1,4 @@
-# References Bot
+# Favorite Places Bot
 
 Chatbot to manage your favorite places.
 
