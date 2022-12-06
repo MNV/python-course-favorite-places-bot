@@ -1,0 +1,16 @@
+networks:
+  favorite-places:
+
+services:
+  # сервис приложения чат-бота для Telegram
+  favorite-places-bot:
+    build: .
+    container_name: favorite-places-bot
+    command: python chatbot.py
+    volumes:
+      - ./src:/src
+      - ./docs:/docs
+    env_file:
+      - .env
+    networks:
+      - favorite-places
